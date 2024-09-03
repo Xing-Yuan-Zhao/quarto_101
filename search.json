@@ -1,0 +1,469 @@
+[
+  {
+    "objectID": "quarto_presentation.html#creating-new-project",
+    "href": "quarto_presentation.html#creating-new-project",
+    "title": "Quarto Project 101",
+    "section": "Creating New Project",
+    "text": "Creating New Project"
+  },
+  {
+    "objectID": "quarto_presentation.html#creating-new-page",
+    "href": "quarto_presentation.html#creating-new-page",
+    "title": "Quarto Project 101",
+    "section": "Creating New Page",
+    "text": "Creating New Page"
+  },
+  {
+    "objectID": "quarto_presentation.html#creating-new-presentation",
+    "href": "quarto_presentation.html#creating-new-presentation",
+    "title": "Quarto Project 101",
+    "section": "Creating New Presentation",
+    "text": "Creating New Presentation"
+  },
+  {
+    "objectID": "quarto_presentation.html#upload-to-github",
+    "href": "quarto_presentation.html#upload-to-github",
+    "title": "Quarto Project 101",
+    "section": "Upload to Github",
+    "text": "Upload to Github"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto Teaching Session",
+    "section": "",
+    "text": "Quarto Teaching Session"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Good to see you again!",
+    "crumbs": [
+      "Home",
+      "Example Section",
+      "About"
+    ]
+  },
+  {
+    "objectID": "quarto_presentation.html",
+    "href": "quarto_presentation.html",
+    "title": "Comprehensive Quarto Guide",
+    "section": "",
+    "text": "The _quarto.yml file configures your entire Quarto project. Here’s a consolidated example:\nproject:\n  type: website\n\nwebsite:\n  title: \"My Quarto Website\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n    right:\n      - icon: github\n        href: https://github.com/yourusername\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: true\n\n\n\nQuarto presentations use specific syntax for slides and components. Here’s a detailed example:\n---\ntitle: \"Quarto Presentation\"\nformat: revealjs\n---\n\n# Section 1\n\n## Slide 1\n\n- Bullet point 1\n- Bullet point 2\n\n## Slide 2 {.smaller}\n\nSome content\n\n::: {.notes}\nSpeaker notes here\n:::\n\n## Columns\n\n::: {.columns}\n:::: {.column width=\"40%\"}\nLeft column\n::::\n:::: {.column width=\"60%\"}\nRight column\n::::\n:::\n\n## Code\n\n::: {.cell}\n\n```{.r .cell-code}\nx &lt;- 1:10\ny &lt;- x^2\nplot(x, y)\n\n\n\n\n\n\n\n:::\n\n\n\n\n\nFirst point\nSecond point\nThird point"
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-configuration",
+    "href": "quarto_presentation.html#yaml-configuration",
+    "title": "Comprehensive Quarto Guide",
+    "section": "",
+    "text": "The _quarto.yml file configures your entire Quarto project. Here’s a consolidated example:\nproject:\n  type: website\n\nwebsite:\n  title: \"My Quarto Website\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n    right:\n      - icon: github\n        href: https://github.com/yourusername\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: true"
+  },
+  {
+    "objectID": "quarto_presentation.html#creating-a-presentation",
+    "href": "quarto_presentation.html#creating-a-presentation",
+    "title": "Comprehensive Quarto Guide",
+    "section": "",
+    "text": "Quarto presentations use specific syntax for slides and components. Here’s a detailed example:\n---\ntitle: \"Quarto Presentation\"\nformat: revealjs\n---\n\n# Section 1\n\n## Slide 1\n\n- Bullet point 1\n- Bullet point 2\n\n## Slide 2 {.smaller}\n\nSome content\n\n::: {.notes}\nSpeaker notes here\n:::\n\n## Columns\n\n::: {.columns}\n:::: {.column width=\"40%\"}\nLeft column\n::::\n:::: {.column width=\"60%\"}\nRight column\n::::\n:::\n\n## Code\n\n::: {.cell}\n\n```{.r .cell-code}\nx &lt;- 1:10\ny &lt;- x^2\nplot(x, y)\n\n\n\n\n\n\n\n:::"
+  },
+  {
+    "objectID": "quarto_presentation.html#incremental-list",
+    "href": "quarto_presentation.html#incremental-list",
+    "title": "Comprehensive Quarto Guide",
+    "section": "",
+    "text": "First point\nSecond point\nThird point"
+  },
+  {
+    "objectID": "quarto_presentation.html#math",
+    "href": "quarto_presentation.html#math",
+    "title": "Comprehensive Quarto Guide",
+    "section": "Math",
+    "text": "Math\n\\[E = mc^2\\]"
+  },
+  {
+    "objectID": "quarto_presentation.html#callouts",
+    "href": "quarto_presentation.html#callouts",
+    "title": "Comprehensive Quarto Guide",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nTip\n\n\n\nThis is a tip\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning"
+  },
+  {
+    "objectID": "quarto_presentation.html#tabsets",
+    "href": "quarto_presentation.html#tabsets",
+    "title": "Advanced Quarto Techniques",
+    "section": "Tabsets",
+    "text": "Tabsets\n\nTab A\n\n\nContent for Tab A ### Tab B Content for Tab B\n\n\n\n\nTabsets: Create tabbed content\n\nFormat: Use {.panel-tabset} block\nDefine tabs with ### headers"
+  },
+  {
+    "objectID": "quarto_presentation.html#github-integration",
+    "href": "quarto_presentation.html#github-integration",
+    "title": "Comprehensive Quarto Guide",
+    "section": "GitHub Integration",
+    "text": "GitHub Integration\nTo integrate with GitHub:\n\nInitialize a Git repository:\ngit init\nAdd your files:\ngit add .\nCommit changes:\ngit commit -m \"Initial commit\"\nLink to GitHub:\ngit remote add origin https://github.com/yourusername/your-repo.git\nPush to GitHub:\ngit push -u origin main\n\nReturn to Index ```\nThis example shows various Quarto features including callouts, code execution, cross-referencing, and margin notes. The GitHub integration steps are included, and the return button is placed at the very end of the document."
+  },
+  {
+    "objectID": "quarto_presentation.html#project-level-yaml",
+    "href": "quarto_presentation.html#project-level-yaml",
+    "title": "Quarto 101",
+    "section": "Project-level YAML",
+    "text": "Project-level YAML\nproject:\n  type: website\nwebsite:\n  title: \"My Quarto Website\"\n  navbar:\n    background: primary\n    left:\n      - text: \"Home\"\n        href: index.qmd\n    right:\n      - icon: github\n        href: https://github.com/yourusername\n  sidebar:\n  style: \"docked\"\n  search: true\n  contents:\n    - section: \"Example Section\"\n      contents:\n        - about.qmd\n  \nformat:\n  html:\n    theme: \n      light: flatly\n      dark: darkly"
+  },
+  {
+    "objectID": "quarto_presentation.html#page-specific-yaml",
+    "href": "quarto_presentation.html#page-specific-yaml",
+    "title": "Quarto 101",
+    "section": "Page-specific YAML",
+    "text": "Page-specific YAML\n---\ntitle: \"Advanced Quarto Techniques\"\nauthor: \"Your Name\"\nformat: \n  revealjs:\n    theme: moon\n    transition: slide\n    slide-number: true\n    chalkboard: true\n    progress: true\ndate: last-modified\n---"
+  },
+  {
+    "objectID": "quarto_presentation.html#markdown-basics",
+    "href": "quarto_presentation.html#markdown-basics",
+    "title": "Quarto 101",
+    "section": "Markdown Basics",
+    "text": "Markdown Basics\n\nHeaders: Create section headings\n\nOptions: # (h1), ## (h2), ### (h3), etc.\n\nLists: Create bulleted or numbered lists\n\nOptions: - (unordered), 1. (ordered)\n\nLinks: Create hyperlinks\n\nFormat: [text](url)\n\nImages: Insert images\n\nFormat: ![alt text](image.jpg)"
+  },
+  {
+    "objectID": "quarto_presentation.html#code-blocks",
+    "href": "quarto_presentation.html#code-blocks",
+    "title": "Quarto 101",
+    "section": "Code Blocks",
+    "text": "Code Blocks\n\n::: {.cell}\n\n```{.r .cell-code}\nx &lt;- rnorm(50)\ny &lt;- rnorm(50)\nplot(x, y, main = \"Scatter Plot\", pch = 19)\n```\n\n::: {.cell-output-display}\n![](quarto_presentation_files/figure-revealjs/unnamed-chunk-1-1.png){width=960}\n:::\n:::"
+  },
+  {
+    "objectID": "quarto_presentation.html#special-blocks",
+    "href": "quarto_presentation.html#special-blocks",
+    "title": "Advanced Quarto Techniques",
+    "section": "Special Blocks",
+    "text": "Special Blocks\n\n\n\n\n\n\nNote\n\n\n::: {.callout-note}\n\n:::\n\n\n\n\n\n\n\n\n\nWarning\n\n\nThis is a warning callout block.\n\n\n\n\nCallout blocks: Highlight important information\n\nOptions: note, warning, important, tip, caution"
+  },
+  {
+    "objectID": "quarto_presentation.html#columns",
+    "href": "quarto_presentation.html#columns",
+    "title": "Advanced Quarto Techniques",
+    "section": "Columns",
+    "text": "Columns\n\n\nLeft column content\n\nRight column content\n\n\nColumns: Create multi-column layouts\n\nFormat: Use nested ::: blocks\nOptions: Specify width as percentage"
+  },
+  {
+    "objectID": "quarto_presentation.html#math-equations",
+    "href": "quarto_presentation.html#math-equations",
+    "title": "Quarto 101",
+    "section": "Math Equations",
+    "text": "Math Equations\nInline math: $a^2 + b^2 = c^2$\n\\(a^2 + b^2 = c^2\\)\n$\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i$\n\\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\)\n$P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$\n\\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)"
+  },
+  {
+    "objectID": "quarto_presentation.html#cross-referencing",
+    "href": "quarto_presentation.html#cross-referencing",
+    "title": "Quarto 101",
+    "section": "Cross-referencing",
+    "text": "Cross-referencing\n\nFigures: @fig-scatter\nTables: @tbl-example\nSections: @sec-introduction"
+  },
+  {
+    "objectID": "quarto_presentation.html#citations",
+    "href": "quarto_presentation.html#citations",
+    "title": "Quarto 101",
+    "section": "Citations",
+    "text": "Citations\nCite like this [@knuth1984texbook]"
+  },
+  {
+    "objectID": "quarto_presentation.html#custom-css",
+    "href": "quarto_presentation.html#custom-css",
+    "title": "Quarto 101",
+    "section": "Custom CSS",
+    "text": "Custom CSS\n.custom-class {\n  color: blue;\n  font-size: 24px;\n}\nLoad the css file in YAML header\nformat:\n  revealjs:\n    css: your_css.css"
+  },
+  {
+    "objectID": "quarto_presentation.html#structure",
+    "href": "quarto_presentation.html#structure",
+    "title": "Quarto 101",
+    "section": "Structure",
+    "text": "Structure\n\n_quarto.yml for configuration\nindex.qmd as homepage\nOther .qmd files for additional pages"
+  },
+  {
+    "objectID": "quarto_presentation.html#navigation",
+    "href": "quarto_presentation.html#navigation",
+    "title": "Quarto 101",
+    "section": "Navigation",
+    "text": "Navigation\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - section: \"Getting Started\"\n        contents:\n          - installation.qmd\n          - quickstart.qmd"
+  },
+  {
+    "objectID": "quarto_presentation.html#setup",
+    "href": "quarto_presentation.html#setup",
+    "title": "Quarto 101",
+    "section": "Setup",
+    "text": "Setup\n\nInitialize Git repository:\ngit init\nAdd files:\ngit add .\nCommit:\ngit commit -m \"Initial commit\""
+  },
+  {
+    "objectID": "quarto_presentation.html#linking-to-github",
+    "href": "quarto_presentation.html#linking-to-github",
+    "title": "Quarto 101",
+    "section": "Linking to GitHub",
+    "text": "Linking to GitHub\ngit remote add origin https://github.com/yourusername/your-repo.git\ngit push -u origin main"
+  },
+  {
+    "objectID": "quarto_presentation.html#github-pages",
+    "href": "quarto_presentation.html#github-pages",
+    "title": "Quarto 101",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nGo to repository settings\nNavigate to “Pages”\nSet source to “GitHub Actions”"
+  },
+  {
+    "objectID": "quarto_presentation.html#key-takeaways",
+    "href": "quarto_presentation.html#key-takeaways",
+    "title": "Quarto 101",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nQuarto combines code, analysis, and narrative\nSupports multiple output formats\nIntegrates well with version control\nIdeal for reproducible research and reporting"
+  },
+  {
+    "objectID": "quarto_presentation.html#resources",
+    "href": "quarto_presentation.html#resources",
+    "title": "Quarto 101",
+    "section": "Resources",
+    "text": "Resources\n\nQuarto Documentation\nQuarto Gallery\nQuarto GitHub\n\nReturn to Index"
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-12",
+    "href": "quarto_presentation.html#yaml-options-explained-12",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (1/2)",
+    "text": "YAML Options Explained (1/2)\n\nproject:type: Defines project type\n\nOptions: website (creates multi-page site), book (creates book-like structure), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar\nnavbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), icon (uses icon instead of text), href (specifies link destination)"
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-22",
+    "href": "quarto_presentation.html#yaml-options-explained-22",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (2/2)",
+    "text": "YAML Options Explained (2/2)\n\nformat:html:theme: Sets color scheme for the website\n\nlight: Theme for light mode\n\nOptions: default, cerulean, cosmo, flatly, journal, litera, lumen, minty, pulse, sandstone, spacelab, united, yeti (all provide different color schemes and styles)\n\ndark: Theme for dark mode\n\nOptions: darkly, cyborg, slate, solar (dark variants of light themes)"
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-13",
+    "href": "quarto_presentation.html#yaml-options-explained-13",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (1/3)",
+    "text": "YAML Options Explained (1/3)\n\nproject:type: Defines project type\n\nOptions: website (creates multi-page site), book (creates book-like structure), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)"
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-23",
+    "href": "quarto_presentation.html#yaml-options-explained-23",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (2/3)",
+    "text": "YAML Options Explained (2/3)\n\nnavbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), icon (uses icon instead of text), href (specifies link destination)\n\nsidebar:style:"
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-33",
+    "href": "quarto_presentation.html#yaml-options-explained-33",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (3/3)",
+    "text": "YAML Options Explained (3/3)\n\nformat:html:theme: Sets color scheme for the website\n\nlight: Theme for light mode\n\nOptions: default, cerulean, cosmo, flatly, journal, litera, lumen, minty, pulse, sandstone, spacelab, united, yeti (all provide different color schemes and styles)\n\ndark: Theme for dark mode\n\nOptions: darkly, cyborg, slate, solar (dark variants of light themes)"
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-12-1",
+    "href": "quarto_presentation.html#yaml-options-explained-12-1",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (1/2)",
+    "text": "YAML Options Explained (1/2)\n\ntitle: Sets the presentation title\n\nOptions: Any string (e.g., “Advanced Quarto Techniques”)\n\nauthor: Specifies the author’s name\n\nOptions: Single name (e.g., “Your Name”) or list of names\n\nformat: Defines the output format\n\nOptions: revealjs (for presentations), html, pdf, docx, etc."
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-22-1",
+    "href": "quarto_presentation.html#yaml-options-explained-22-1",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (2/2)",
+    "text": "YAML Options Explained (2/2)\n\nrevealjs: Configures reveal.js presentation options\n\ntheme: Sets the presentation theme\n\nOptions: moon, night, beige, sky, serif, simple, solarized, blood, black, white, league\n\ntransition: Defines slide transition effect\n\nOptions: slide, fade, convex, concave, zoom, none\n\nslide-number: Shows slide numbers\n\nOptions: true (show), false (hide)\n\nchalkboard: Enables chalkboard feature\n\nOptions: true (enable), false (disable)"
+  },
+  {
+    "objectID": "quarto_presentation.html#fragments",
+    "href": "quarto_presentation.html#fragments",
+    "title": "Quarto 101",
+    "section": "Fragments",
+    "text": "Fragments\n\n::: {.fragment}\nThis content will appear on a fragment.\n:::\n\n\n::: {.fragment .fade-in}\nThis content will fade in.\n:::\n\n\n::: {.fragment .fade-out}\nThis content will fade out.\n:::"
+  },
+  {
+    "objectID": "quarto_presentation.html#special-blocks-12",
+    "href": "quarto_presentation.html#special-blocks-12",
+    "title": "Quarto 101",
+    "section": "Special Blocks (1/2)",
+    "text": "Special Blocks (1/2)\n\n\n\n\n\n\nNote\n\n\n::: {.callout-note}\nThis is a note callout block.\n:::\n\n\n\n\n\n\n\n\n\nWarning\n\n\n::: {.callout-warning}\nThis is a warning callout block.\n:::\n\n\n\n\n\n\n\n\n\nImportant\n\n\n::: {.callout-important}\nThis is an important callout block.\n:::"
+  },
+  {
+    "objectID": "quarto_presentation.html#special-blocks-22",
+    "href": "quarto_presentation.html#special-blocks-22",
+    "title": "Quarto 101",
+    "section": "Special Blocks (2/2)",
+    "text": "Special Blocks (2/2)\n\n\n\n\n\n\nTip\n\n\n::: {.callout-tip}\nThis is a tip callout block.\n:::\n\n\n\n\n\n\n\n\n\nCaution\n\n\n::: {.callout-caution}\nThis is a caution callout block.\n:::\n\n\n\n\nSyntax: Use ::: to open and close the block, specify type with {.callout-type}\nTypes: note, warning, important, tip, caution…"
+  },
+  {
+    "objectID": "quarto_presentation.html#fragments-12",
+    "href": "quarto_presentation.html#fragments-12",
+    "title": "Advanced Quarto Techniques",
+    "section": "Fragments (1/2)",
+    "text": "Fragments (1/2)\n\n::: {.fragment}\nThis content will appear on a fragment.\n:::\n\n\n::: {.fragment .fade-in}\nThis content will fade in.\n:::\n\n\n::: {.fragment .fade-out}\nThis content will fade out.\n:::"
+  },
+  {
+    "objectID": "quarto_presentation.html#table",
+    "href": "quarto_presentation.html#table",
+    "title": "Advanced Quarto Techniques",
+    "section": "Table",
+    "text": "Table"
+  },
+  {
+    "objectID": "quarto_presentation.html#creating-tables",
+    "href": "quarto_presentation.html#creating-tables",
+    "title": "Quarto 101",
+    "section": "Creating Tables",
+    "text": "Creating Tables\n\nHeaders: Use headers to organize and title the columns in your table.\n\nOptions: Plain text (e.g., “Column 1”, “Column 2”).\n\nAlignment: Adjust the alignment of text within the columns.\n\nOptions: Left-aligned (:---), Right-aligned (---:), Center-aligned (:---:).\n\nBorder: Create tables using pipe (|) characters."
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-13-1",
+    "href": "quarto_presentation.html#yaml-options-explained-13-1",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (1/3)",
+    "text": "YAML Options Explained (1/3)\n\ntitle: Sets the presentation title\n\nOptions: Any string (e.g., “Advanced Quarto Techniques”)\n\nauthor: Specifies the author’s name\n\nOptions: Single name (e.g., “Your Name”) or list of names\n\nformat: Defines the output format\n\nOptions: revealjs (for presentations), html, pdf, docx, etc."
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-23-1",
+    "href": "quarto_presentation.html#yaml-options-explained-23-1",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (2/3)",
+    "text": "YAML Options Explained (2/3)\n\nrevealjs: Configures reveal.js presentation options\n\ntheme: Sets the presentation theme\n\nOptions: moon, night, beige, sky, serif, simple, solarized, blood, black, white, league\n\ntransition: Defines slide transition effect\n\nOptions: slide, fade, convex, concave, zoom, none\n\nslide-number: Shows slide numbers\n\nOptions: true (show), false (hide)\n\nchalkboard: Enables chalkboard feature\n\nOptions: true (enable), false (disable)"
+  },
+  {
+    "objectID": "quarto_presentation.html#yaml-options-explained-33-1",
+    "href": "quarto_presentation.html#yaml-options-explained-33-1",
+    "title": "Quarto 101",
+    "section": "YAML Options Explained (3/3)",
+    "text": "YAML Options Explained (3/3)\n\nprogress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: last-modified (updates automatically), specific date (e.g., “2023-09-15”), today (current date)"
+  },
+  {
+    "objectID": "quarto_page.html",
+    "href": "quarto_page.html",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "project:\n  type: website\nwebsite:\n  title: \"My Quarto Website\"\n  navbar:\n    background: primary\n    left:\n      - text: \"Home\"\n        href: index.qmd\n    right:\n      - icon: github\n        href: https://github.com/yourusername\n  sidebar:\n  style: \"docked\"\n  search: true\n  contents:\n    - section: \"Example Section\"\n      contents:\n        - about.qmd\n  \nformat:\n  html:\n    theme: \n      light: flatly\n      dark: darkly\n\n\n\n\n\nproject:type: Defines project type\n\nOptions: website (creates multi-page site), book (creates book-like structure), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)\n\n\n\n\n\n\n\nnavbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), icon (uses icon instead of text), href (specifies link destination)\n\nsidebar:style:\n\n\n\n\n\n\nformat:html:theme: Sets color scheme for the website\n\nlight: Theme for light mode\n\nOptions: default, cerulean, cosmo, flatly, journal, litera, lumen, minty, pulse, sandstone, spacelab, united, yeti (all provide different color schemes and styles)\n\ndark: Theme for dark mode\n\nOptions: darkly, cyborg, slate, solar (dark variants of light themes)\n\n\n\n\n\n\n\n---\ntitle: \"Quarto 101\"\nauthor: \"Your Name\"\nformat: \n  html:\n    theme: \"flatly\"\n    highlight-style: \"tango\"\n    number-sections: true\n---\n\n\n\n\n\ntitle: Sets the presentation title\n\nOptions: Any string (e.g., “Advanced Quarto Techniques”)\n\nauthor: Specifies the author’s name\n\nOptions: Single name (e.g., “Your Name”) or list of names\n\nformat: Defines the output format\n\nOptions: revealjs (for presentations), html, pdf, docx, etc.\n\n\n\n\n\n\n\nhtml: Configures html options\n\ntheme: Sets the presentation theme\n\nOptions: cerulean, lumen, minty…\n\nhighlight-style: Sets the style used for syntax highlighting in code blocks\n\nOptions: tango, espresso, breezedark…\n\ntoc: Enables or disables the display of a table of contents\ntoc-depth:Specifies how many levels of headings are included in the table of contents\nnumber-sections: Determines whether to automatically number the sections of the document\n\n\n\n\n\n\n\nprogress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: last-modified (updates automatically), specific date (e.g., “2023-09-15”), today (current date)\n\n\n\n\n\n\nHeaders: Create section headings\n\nOptions: # (h1), ## (h2), ### (h3), etc.\n\nLists: Create bulleted or numbered lists\n\nOptions: - (unordered), 1. (ordered)\n\nLinks: Create hyperlinks\n\nFormat: [text](url)\n\nImages: Insert images\n\nFormat: ![alt text](image.jpg)\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx &lt;- rnorm(50)\ny &lt;- rnorm(50)\nplot(x, y, main = \"Scatter Plot\", pch = 19)\n```\n\n::: {.cell-output-display}\n![](quarto_page_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n::: {.callout-note}\nThis is a note callout block.\n:::\n\n\n\n\n\n\n\n\nWarning\n\n\n\n::: {.callout-warning}\nThis is a warning callout block.\n:::\n\n\n\n\n\n\n\n\nImportant\n\n\n\n::: {.callout-important}\nThis is an important callout block.\n:::\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\n::: {.callout-tip}\nThis is a tip callout block.\n:::\n\n\n\n\n\n\n\n\nCaution\n\n\n\n::: {.callout-caution}\nThis is a caution callout block.\n:::\n\n\n\nSyntax: Use ::: to open and close the block, specify type with {.callout-type}\nTypes: note, warning, important, tip, caution…\n\n\n\n\n\n\n::: {.fragment}\nThis content will appear on a fragment.\n:::\n\n\n::: {.fragment .fade-in}\nThis content will fade in.\n:::\n\n\n::: {.fragment .fade-out}\nThis content will fade out.\n:::\n\n\n\n\n\n\nHeaders: Use headers to organize and title the columns in your table.\n\nOptions: Plain text (e.g., “Column 1”, “Column 2”).\n\nAlignment: Adjust the alignment of text within the columns.\n\nOptions: Left-aligned (:---), Right-aligned (---:), Center-aligned (:---:).\n\nBorder: Create tables using pipe (|) characters.\n\n\n| Header 1 | Header 2 | Header 3 |\n|:---------|:--------:|---------:|\n| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |\n| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |\n| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |\n\n\n\nHeader 1\nHeader 2\nHeader 3\n\n\n\n\nRow 1 Col 1\nRow 1 Col 2\nRow 1 Col 3\n\n\nRow 2 Col 1\nRow 2 Col 2\nRow 2 Col 3\n\n\nRow 3 Col 1\nRow 3 Col 2\nRow 3 Col 3\n\n\n\n\n\n\n\nInline math: $a^2 + b^2 = c^2$\n\\(a^2 + b^2 = c^2\\)\n$\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i$\n\\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\)\n$P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$\n\\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)\n\nMath block:\n$$\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n$$\n\\[\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n\\]\n\n$$\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n$$\n\\[\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n\\]\n\n\nBasic operators: +, -, \\times, \\cdot,\\div, =, \\neq, &lt;, &gt;\nSet operators: \\in, \\subset, \\cup, \\cap\nUse \\frac{}{} for fractions, \\sum for summations, \\prod for products\nFor matrices and other structures, use environments like \\begin{bmatrix} \\end{bmatrix}\nGreek letters: \\alpha, \\beta, \\gamma, etc."
+  },
+  {
+    "objectID": "quarto_page.html#project-level-yaml",
+    "href": "quarto_page.html#project-level-yaml",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "project:\n  type: website\nwebsite:\n  title: \"My Quarto Website\"\n  navbar:\n    background: primary\n    left:\n      - text: \"Home\"\n        href: index.qmd\n    right:\n      - icon: github\n        href: https://github.com/yourusername\n  sidebar:\n  style: \"docked\"\n  search: true\n  contents:\n    - section: \"Example Section\"\n      contents:\n        - about.qmd\n  \nformat:\n  html:\n    theme: \n      light: flatly\n      dark: darkly"
+  },
+  {
+    "objectID": "quarto_page.html#yaml-options-explained-13",
+    "href": "quarto_page.html#yaml-options-explained-13",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "project:type: Defines project type\n\nOptions: website (creates multi-page site), book (creates book-like structure), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)"
+  },
+  {
+    "objectID": "quarto_page.html#yaml-options-explained-23",
+    "href": "quarto_page.html#yaml-options-explained-23",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "navbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), icon (uses icon instead of text), href (specifies link destination)\n\nsidebar:style:"
+  },
+  {
+    "objectID": "quarto_page.html#yaml-options-explained-33",
+    "href": "quarto_page.html#yaml-options-explained-33",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "format:html:theme: Sets color scheme for the website\n\nlight: Theme for light mode\n\nOptions: default, cerulean, cosmo, flatly, journal, litera, lumen, minty, pulse, sandstone, spacelab, united, yeti (all provide different color schemes and styles)\n\ndark: Theme for dark mode\n\nOptions: darkly, cyborg, slate, solar (dark variants of light themes)"
+  },
+  {
+    "objectID": "quarto_page.html#page-specific-yaml",
+    "href": "quarto_page.html#page-specific-yaml",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "---\ntitle: \"Quarto 101\"\nauthor: \"Your Name\"\nformat: \n  html:\n    theme: \"flatly\"\n    highlight-style: \"tango\"\n    number-sections: true\n---"
+  },
+  {
+    "objectID": "quarto_page.html#yaml-options-explained-13-1",
+    "href": "quarto_page.html#yaml-options-explained-13-1",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "title: Sets the presentation title\n\nOptions: Any string (e.g., “Advanced Quarto Techniques”)\n\nauthor: Specifies the author’s name\n\nOptions: Single name (e.g., “Your Name”) or list of names\n\nformat: Defines the output format\n\nOptions: revealjs (for presentations), html, pdf, docx, etc."
+  },
+  {
+    "objectID": "quarto_page.html#yaml-options-explained-23-1",
+    "href": "quarto_page.html#yaml-options-explained-23-1",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "html: Configures html options\n\ntheme: Sets the presentation theme\n\nOptions: cerulean, lumen, minty…\n\nhighlight-style: Sets the style used for syntax highlighting in code blocks\n\nOptions: tango, espresso, breezedark…\n\ntoc: Enables or disables the display of a table of contents\ntoc-depth:Specifies how many levels of headings are included in the table of contents\nnumber-sections: Determines whether to automatically number the sections of the document"
+  },
+  {
+    "objectID": "quarto_page.html#yaml-options-explained-33-1",
+    "href": "quarto_page.html#yaml-options-explained-33-1",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "progress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: last-modified (updates automatically), specific date (e.g., “2023-09-15”), today (current date)"
+  },
+  {
+    "objectID": "quarto_page.html#markdown-basics",
+    "href": "quarto_page.html#markdown-basics",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "Headers: Create section headings\n\nOptions: # (h1), ## (h2), ### (h3), etc.\n\nLists: Create bulleted or numbered lists\n\nOptions: - (unordered), 1. (ordered)\n\nLinks: Create hyperlinks\n\nFormat: [text](url)\n\nImages: Insert images\n\nFormat: ![alt text](image.jpg)"
+  },
+  {
+    "objectID": "quarto_page.html#code-blocks",
+    "href": "quarto_page.html#code-blocks",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "::: {.cell}\n\n```{.r .cell-code}\nx &lt;- rnorm(50)\ny &lt;- rnorm(50)\nplot(x, y, main = \"Scatter Plot\", pch = 19)\n```\n\n::: {.cell-output-display}\n![](quarto_page_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::"
+  },
+  {
+    "objectID": "quarto_page.html#special-blocks-12",
+    "href": "quarto_page.html#special-blocks-12",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "Note\n\n\n\n::: {.callout-note}\nThis is a note callout block.\n:::\n\n\n\n\n\n\n\n\nWarning\n\n\n\n::: {.callout-warning}\nThis is a warning callout block.\n:::\n\n\n\n\n\n\n\n\nImportant\n\n\n\n::: {.callout-important}\nThis is an important callout block.\n:::"
+  },
+  {
+    "objectID": "quarto_page.html#special-blocks-22",
+    "href": "quarto_page.html#special-blocks-22",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "Tip\n\n\n\n::: {.callout-tip}\nThis is a tip callout block.\n:::\n\n\n\n\n\n\n\n\nCaution\n\n\n\n::: {.callout-caution}\nThis is a caution callout block.\n:::\n\n\n\nSyntax: Use ::: to open and close the block, specify type with {.callout-type}\nTypes: note, warning, important, tip, caution…"
+  },
+  {
+    "objectID": "quarto_page.html#fragments",
+    "href": "quarto_page.html#fragments",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "::: {.fragment}\nThis content will appear on a fragment.\n:::\n\n\n::: {.fragment .fade-in}\nThis content will fade in.\n:::\n\n\n::: {.fragment .fade-out}\nThis content will fade out.\n:::"
+  },
+  {
+    "objectID": "quarto_page.html#creating-tables",
+    "href": "quarto_page.html#creating-tables",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "Headers: Use headers to organize and title the columns in your table.\n\nOptions: Plain text (e.g., “Column 1”, “Column 2”).\n\nAlignment: Adjust the alignment of text within the columns.\n\nOptions: Left-aligned (:---), Right-aligned (---:), Center-aligned (:---:).\n\nBorder: Create tables using pipe (|) characters.\n\n\n| Header 1 | Header 2 | Header 3 |\n|:---------|:--------:|---------:|\n| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |\n| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |\n| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |\n\n\n\nHeader 1\nHeader 2\nHeader 3\n\n\n\n\nRow 1 Col 1\nRow 1 Col 2\nRow 1 Col 3\n\n\nRow 2 Col 1\nRow 2 Col 2\nRow 2 Col 3\n\n\nRow 3 Col 1\nRow 3 Col 2\nRow 3 Col 3"
+  },
+  {
+    "objectID": "quarto_page.html#math-equations",
+    "href": "quarto_page.html#math-equations",
+    "title": "Quarto 101",
+    "section": "",
+    "text": "Inline math: $a^2 + b^2 = c^2$\n\\(a^2 + b^2 = c^2\\)\n$\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i$\n\\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\)\n$P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$\n\\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)\n\nMath block:\n$$\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n$$\n\\[\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n\\]\n\n$$\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n$$\n\\[\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n\\]\n\n\nBasic operators: +, -, \\times, \\cdot,\\div, =, \\neq, &lt;, &gt;\nSet operators: \\in, \\subset, \\cup, \\cap\nUse \\frac{}{} for fractions, \\sum for summations, \\prod for products\nFor matrices and other structures, use environments like \\begin{bmatrix} \\end{bmatrix}\nGreek letters: \\alpha, \\beta, \\gamma, etc."
+  },
+  {
+    "objectID": "quarto_page.html#custom-css",
+    "href": "quarto_page.html#custom-css",
+    "title": "Quarto 101",
+    "section": "2.1 Custom CSS",
+    "text": "2.1 Custom CSS\n.custom-class {\n  color: blue;\n  font-size: 24px;\n}\nLoad the css file in YAML header\nformat:\n  revealjs:\n    css: your_css.css"
+  },
+  {
+    "objectID": "quarto_page.html#structure",
+    "href": "quarto_page.html#structure",
+    "title": "Quarto 101",
+    "section": "3.1 Structure",
+    "text": "3.1 Structure\n\n_quarto.yml for configuration\nindex.qmd as homepage\nOther .qmd files for additional pages"
+  },
+  {
+    "objectID": "quarto_page.html#navigation",
+    "href": "quarto_page.html#navigation",
+    "title": "Quarto 101",
+    "section": "3.2 Navigation",
+    "text": "3.2 Navigation\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - section: \"Getting Started\"\n        contents:\n          - installation.qmd\n          - quickstart.qmd"
+  }
+]
