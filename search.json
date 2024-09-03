@@ -338,7 +338,7 @@
     "href": "quarto_page.html",
     "title": "Quarto 101",
     "section": "",
-    "text": "project:\n  type: website\nwebsite:\n  title: \"My Quarto Website\"\n  navbar:\n    background: primary\n    left:\n      - text: \"Home\"\n        href: index.qmd\n    right:\n      - icon: github\n        href: https://github.com/yourusername\n  sidebar:\n  style: \"docked\"\n  search: true\n  contents:\n    - section: \"Example Section\"\n      contents:\n        - about.qmd\n  \nformat:\n  html:\n    theme: \n      light: flatly\n      dark: darkly\n\n\n\n\n\nproject:type: Defines project type\n\nOptions: website (creates multi-page site), book (creates book-like structure), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)\n\n\n\n\n\n\n\nnavbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), icon (uses icon instead of text), href (specifies link destination)\n\nsidebar:style:\n\n\n\n\n\n\nformat:html:theme: Sets color scheme for the website\n\nlight: Theme for light mode\n\nOptions: default, cerulean, cosmo, flatly, journal, litera, lumen, minty, pulse, sandstone, spacelab, united, yeti (all provide different color schemes and styles)\n\ndark: Theme for dark mode\n\nOptions: darkly, cyborg, slate, solar (dark variants of light themes)\n\n\n\n\n\n\n\n---\ntitle: \"Quarto 101\"\nauthor: \"Your Name\"\nformat: \n  html:\n    theme: \"flatly\"\n    highlight-style: \"tango\"\n    number-sections: true\n---\n\n\n\n\n\ntitle: Sets the presentation title\n\nOptions: Any string (e.g., “Advanced Quarto Techniques”)\n\nauthor: Specifies the author’s name\n\nOptions: Single name (e.g., “Your Name”) or list of names\n\nformat: Defines the output format\n\nOptions: revealjs (for presentations), html, pdf, docx, etc.\n\n\n\n\n\n\n\nhtml: Configures html options\n\ntheme: Sets the presentation theme\n\nOptions: cerulean, lumen, minty…\n\nhighlight-style: Sets the style used for syntax highlighting in code blocks\n\nOptions: tango, espresso, breezedark…\n\ntoc: Enables or disables the display of a table of contents\ntoc-depth:Specifies how many levels of headings are included in the table of contents\nnumber-sections: Determines whether to automatically number the sections of the document\n\n\n\n\n\n\n\nprogress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: last-modified (updates automatically), specific date (e.g., “2023-09-15”), today (current date)\n\n\n\n\n\n\nHeaders: Create section headings\n\nOptions: # (h1), ## (h2), ### (h3), etc.\n\nLists: Create bulleted or numbered lists\n\nOptions: - (unordered), 1. (ordered)\n\nLinks: Create hyperlinks\n\nFormat: [text](url)\n\nImages: Insert images\n\nFormat: ![alt text](image.jpg)\n\n\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx &lt;- rnorm(50)\ny &lt;- rnorm(50)\nplot(x, y, main = \"Scatter Plot\", pch = 19)\n```\n\n::: {.cell-output-display}\n![](quarto_page_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n::: {.callout-note}\nThis is a note callout block.\n:::\n\n\n\n\n\n\n\n\nWarning\n\n\n\n::: {.callout-warning}\nThis is a warning callout block.\n:::\n\n\n\n\n\n\n\n\nImportant\n\n\n\n::: {.callout-important}\nThis is an important callout block.\n:::\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\n::: {.callout-tip}\nThis is a tip callout block.\n:::\n\n\n\n\n\n\n\n\nCaution\n\n\n\n::: {.callout-caution}\nThis is a caution callout block.\n:::\n\n\n\nSyntax: Use ::: to open and close the block, specify type with {.callout-type}\nTypes: note, warning, important, tip, caution…\n\n\n\n\n\n\n::: {.fragment}\nThis content will appear on a fragment.\n:::\n\n\n::: {.fragment .fade-in}\nThis content will fade in.\n:::\n\n\n::: {.fragment .fade-out}\nThis content will fade out.\n:::\n\n\n\n\n\n\nHeaders: Use headers to organize and title the columns in your table.\n\nOptions: Plain text (e.g., “Column 1”, “Column 2”).\n\nAlignment: Adjust the alignment of text within the columns.\n\nOptions: Left-aligned (:---), Right-aligned (---:), Center-aligned (:---:).\n\nBorder: Create tables using pipe (|) characters.\n\n\n| Header 1 | Header 2 | Header 3 |\n|:---------|:--------:|---------:|\n| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |\n| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |\n| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |\n\n\n\nHeader 1\nHeader 2\nHeader 3\n\n\n\n\nRow 1 Col 1\nRow 1 Col 2\nRow 1 Col 3\n\n\nRow 2 Col 1\nRow 2 Col 2\nRow 2 Col 3\n\n\nRow 3 Col 1\nRow 3 Col 2\nRow 3 Col 3\n\n\n\n\n\n\n\nInline math: $a^2 + b^2 = c^2$\n\\(a^2 + b^2 = c^2\\)\n$\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i$\n\\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\)\n$P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$\n\\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)\n\nMath block:\n$$\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n$$\n\\[\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n\\]\n\n$$\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n$$\n\\[\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n\\]\n\n\nBasic operators: +, -, \\times, \\cdot,\\div, =, \\neq, &lt;, &gt;\nSet operators: \\in, \\subset, \\cup, \\cap\nUse \\frac{}{} for fractions, \\sum for summations, \\prod for products\nFor matrices and other structures, use environments like \\begin{bmatrix} \\end{bmatrix}\nGreek letters: \\alpha, \\beta, \\gamma, etc."
+    "text": "project:\n  type: website\nwebsite:\n  title: \"My Quarto Website\"\n  navbar:\n    background: primary\n    left:\n      - text: \"Home\"\n        href: index.qmd\n    right:\n      - icon: github\n        href: https://github.com/yourusername\n  sidebar:\n  style: \"docked\"\n  search: true\n  contents:\n    - section: \"Example Section\"\n      contents:\n        - about.qmd\n  \nformat:\n  html:\n    theme: \n      light: flatly\n      dark: darkly\n\n\n\n\n\nproject:type: Defines project type\n\nOptions: website (creates multi-page site), book (creates book-like structure), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)\n\n\n\n\n\n\n\nnavbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), icon (uses icon instead of text), href (specifies link destination)\n\nsidebar:style:\n\n\n\n\n\n\nformat:html:theme: Sets color scheme for the website\n\nlight: Theme for light mode\n\nOptions: default, cerulean, cosmo, flatly, journal, litera, lumen, minty, pulse, sandstone, spacelab, united, yeti (all provide different color schemes and styles)\n\ndark: Theme for dark mode\n\nOptions: darkly, cyborg, slate, solar (dark variants of light themes)\n\n\n\n\n\n\n\n---\ntitle: \"Quarto 101\"\nauthor: \"Your Name\"\nformat: \n  html:\n    theme: \"flatly\"\n    highlight-style: \"tango\"\n    number-sections: true\n---\n\n\n\n\n\ntitle: Sets the presentation title\n\nOptions: Any string (e.g., “Advanced Quarto Techniques”)\n\nauthor: Specifies the author’s name\n\nOptions: Single name (e.g., “Your Name”) or list of names\n\nformat: Defines the output format\n\nOptions: revealjs (for presentations), html, pdf, docx, etc.\n\n\n\n\n\n\n\nhtml: Configures html options\n\ntheme: Sets the presentation theme\n\nOptions: cerulean, lumen, minty…\n\nhighlight-style: Sets the style used for syntax highlighting in code blocks\n\nOptions: tango, espresso, breezedark…\n\ntoc: Enables or disables the display of a table of contents\ntoc-depth:Specifies how many levels of headings are included in the table of contents\nnumber-sections: Determines whether to automatically number the sections of the document\n\n\n\n\n\n\n\nprogress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: last-modified (updates automatically), specific date (e.g., “2023-09-15”), today (current date)"
   },
   {
     "objectID": "quarto_page.html#project-level-yaml",
@@ -400,70 +400,70 @@
     "objectID": "quarto_page.html#markdown-basics",
     "href": "quarto_page.html#markdown-basics",
     "title": "Quarto 101",
-    "section": "",
-    "text": "Headers: Create section headings\n\nOptions: # (h1), ## (h2), ### (h3), etc.\n\nLists: Create bulleted or numbered lists\n\nOptions: - (unordered), 1. (ordered)\n\nLinks: Create hyperlinks\n\nFormat: [text](url)\n\nImages: Insert images\n\nFormat: ![alt text](image.jpg)"
+    "section": "2.1 Markdown Basics",
+    "text": "2.1 Markdown Basics\n\nHeaders: Create section headings\n\nOptions: # (h1), ## (h2), ### (h3), etc.\n\nLists: Create bulleted or numbered lists\n\nOptions: - (unordered), 1. (ordered)\n\nLinks: Create hyperlinks\n\nFormat: [text](url)\n\nImages: Insert images\n\nFormat: ![alt text](image.jpg)"
   },
   {
     "objectID": "quarto_page.html#code-blocks",
     "href": "quarto_page.html#code-blocks",
     "title": "Quarto 101",
-    "section": "",
-    "text": "::: {.cell}\n\n```{.r .cell-code}\nx &lt;- rnorm(50)\ny &lt;- rnorm(50)\nplot(x, y, main = \"Scatter Plot\", pch = 19)\n```\n\n::: {.cell-output-display}\n![](quarto_page_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::"
+    "section": "2.2 Code Blocks",
+    "text": "2.2 Code Blocks\n\n::: {.cell}\n\n```{.r .cell-code}\nx &lt;- rnorm(50)\ny &lt;- rnorm(50)\nplot(x, y, main = \"Scatter Plot\", pch = 19)\n```\n\n::: {.cell-output-display}\n![](quarto_page_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::"
   },
   {
     "objectID": "quarto_page.html#special-blocks-12",
     "href": "quarto_page.html#special-blocks-12",
     "title": "Quarto 101",
-    "section": "",
-    "text": "Note\n\n\n\n::: {.callout-note}\nThis is a note callout block.\n:::\n\n\n\n\n\n\n\n\nWarning\n\n\n\n::: {.callout-warning}\nThis is a warning callout block.\n:::\n\n\n\n\n\n\n\n\nImportant\n\n\n\n::: {.callout-important}\nThis is an important callout block.\n:::"
+    "section": "2.3 Special Blocks (1/2)",
+    "text": "2.3 Special Blocks (1/2)\n\n\n\n\n\n\nNote\n\n\n\n::: {.callout-note}\nThis is a note callout block.\n:::\n\n\n\n\n\n\n\n\nWarning\n\n\n\n::: {.callout-warning}\nThis is a warning callout block.\n:::\n\n\n\n\n\n\n\n\nImportant\n\n\n\n::: {.callout-important}\nThis is an important callout block.\n:::"
   },
   {
     "objectID": "quarto_page.html#special-blocks-22",
     "href": "quarto_page.html#special-blocks-22",
     "title": "Quarto 101",
-    "section": "",
-    "text": "Tip\n\n\n\n::: {.callout-tip}\nThis is a tip callout block.\n:::\n\n\n\n\n\n\n\n\nCaution\n\n\n\n::: {.callout-caution}\nThis is a caution callout block.\n:::\n\n\n\nSyntax: Use ::: to open and close the block, specify type with {.callout-type}\nTypes: note, warning, important, tip, caution…"
+    "section": "2.4 Special Blocks (2/2)",
+    "text": "2.4 Special Blocks (2/2)\n\n\n\n\n\n\nTip\n\n\n\n::: {.callout-tip}\nThis is a tip callout block.\n:::\n\n\n\n\n\n\n\n\nCaution\n\n\n\n::: {.callout-caution}\nThis is a caution callout block.\n:::\n\n\n\nSyntax: Use ::: to open and close the block, specify type with {.callout-type}\nTypes: note, warning, important, tip, caution…"
   },
   {
     "objectID": "quarto_page.html#fragments",
     "href": "quarto_page.html#fragments",
     "title": "Quarto 101",
-    "section": "",
-    "text": "::: {.fragment}\nThis content will appear on a fragment.\n:::\n\n\n::: {.fragment .fade-in}\nThis content will fade in.\n:::\n\n\n::: {.fragment .fade-out}\nThis content will fade out.\n:::"
+    "section": "2.5 Fragments",
+    "text": "2.5 Fragments\n\n::: {.fragment}\nThis content will appear on a fragment.\n:::\n\n\n::: {.fragment .fade-in}\nThis content will fade in.\n:::\n\n\n::: {.fragment .fade-out}\nThis content will fade out.\n:::"
   },
   {
     "objectID": "quarto_page.html#creating-tables",
     "href": "quarto_page.html#creating-tables",
     "title": "Quarto 101",
-    "section": "",
-    "text": "Headers: Use headers to organize and title the columns in your table.\n\nOptions: Plain text (e.g., “Column 1”, “Column 2”).\n\nAlignment: Adjust the alignment of text within the columns.\n\nOptions: Left-aligned (:---), Right-aligned (---:), Center-aligned (:---:).\n\nBorder: Create tables using pipe (|) characters.\n\n\n| Header 1 | Header 2 | Header 3 |\n|:---------|:--------:|---------:|\n| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |\n| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |\n| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |\n\n\n\nHeader 1\nHeader 2\nHeader 3\n\n\n\n\nRow 1 Col 1\nRow 1 Col 2\nRow 1 Col 3\n\n\nRow 2 Col 1\nRow 2 Col 2\nRow 2 Col 3\n\n\nRow 3 Col 1\nRow 3 Col 2\nRow 3 Col 3"
+    "section": "2.6 Creating Tables",
+    "text": "2.6 Creating Tables\n\nHeaders: Use headers to organize and title the columns in your table.\n\nOptions: Plain text (e.g., “Column 1”, “Column 2”).\n\nAlignment: Adjust the alignment of text within the columns.\n\nOptions: Left-aligned (:---), Right-aligned (---:), Center-aligned (:---:).\n\nBorder: Create tables using pipe (|) characters.\n\n\n| Header 1 | Header 2 | Header 3 |\n|:---------|:--------:|---------:|\n| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |\n| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |\n| Row 3 Col 1 | Row 3 Col 2 | Row 3 Col 3 |\n\n\n\nHeader 1\nHeader 2\nHeader 3\n\n\n\n\nRow 1 Col 1\nRow 1 Col 2\nRow 1 Col 3\n\n\nRow 2 Col 1\nRow 2 Col 2\nRow 2 Col 3\n\n\nRow 3 Col 1\nRow 3 Col 2\nRow 3 Col 3"
   },
   {
     "objectID": "quarto_page.html#math-equations",
     "href": "quarto_page.html#math-equations",
     "title": "Quarto 101",
-    "section": "",
-    "text": "Inline math: $a^2 + b^2 = c^2$\n\\(a^2 + b^2 = c^2\\)\n$\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i$\n\\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\)\n$P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$\n\\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)\n\nMath block:\n$$\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n$$\n\\[\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n\\]\n\n$$\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n$$\n\\[\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n\\]\n\n\nBasic operators: +, -, \\times, \\cdot,\\div, =, \\neq, &lt;, &gt;\nSet operators: \\in, \\subset, \\cup, \\cap\nUse \\frac{}{} for fractions, \\sum for summations, \\prod for products\nFor matrices and other structures, use environments like \\begin{bmatrix} \\end{bmatrix}\nGreek letters: \\alpha, \\beta, \\gamma, etc."
+    "section": "2.7 Math Equations",
+    "text": "2.7 Math Equations\nInline math: $a^2 + b^2 = c^2$\n\\(a^2 + b^2 = c^2\\)\n$\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i$\n\\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^n x_i\\)\n$P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$\n\\(P(A|B) = \\frac{P(B|A)P(A)}{P(B)}\\)\n\nMath block:\n$$\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n$$\n\\[\nf(x) = \\begin{cases}\nx^2 & \\text{if } x \\geq 0 \\\\\n-x^2 & \\text{if } x &lt; 0\n\\end{cases}\n\\]\n\n$$\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n$$\n\\[\n\\begin{bmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{bmatrix}\n\\]\n\n\nBasic operators: +, -, \\times, \\cdot,\\div, =, \\neq, &lt;, &gt;\nSet operators: \\in, \\subset, \\cup, \\cap\nUse \\frac{}{} for fractions, \\sum for summations, \\prod for products\nFor matrices and other structures, use environments like \\begin{bmatrix} \\end{bmatrix}\nGreek letters: \\alpha, \\beta, \\gamma, etc."
   },
   {
     "objectID": "quarto_page.html#custom-css",
     "href": "quarto_page.html#custom-css",
     "title": "Quarto 101",
-    "section": "2.1 Custom CSS",
-    "text": "2.1 Custom CSS\n.custom-class {\n  color: blue;\n  font-size: 24px;\n}\nLoad the css file in YAML header\nformat:\n  revealjs:\n    css: your_css.css"
+    "section": "3.1 Custom CSS",
+    "text": "3.1 Custom CSS\n.custom-class {\n  color: blue;\n  font-size: 24px;\n}\nLoad the css file in YAML header\nformat:\n  revealjs:\n    css: your_css.css"
   },
   {
     "objectID": "quarto_page.html#structure",
     "href": "quarto_page.html#structure",
     "title": "Quarto 101",
-    "section": "3.1 Structure",
-    "text": "3.1 Structure\n\n_quarto.yml for configuration\nindex.qmd as homepage\nOther .qmd files for additional pages"
+    "section": "4.1 Structure",
+    "text": "4.1 Structure\n\n_quarto.yml for configuration\nindex.qmd as homepage\nOther .qmd files for additional pages"
   },
   {
     "objectID": "quarto_page.html#navigation",
     "href": "quarto_page.html#navigation",
     "title": "Quarto 101",
-    "section": "3.2 Navigation",
-    "text": "3.2 Navigation\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - section: \"Getting Started\"\n        contents:\n          - installation.qmd\n          - quickstart.qmd"
+    "section": "4.2 Navigation",
+    "text": "4.2 Navigation\nwebsite:\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: about.qmd\n        text: About\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - section: \"Getting Started\"\n        contents:\n          - installation.qmd\n          - quickstart.qmd"
   }
 ]
