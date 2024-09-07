@@ -240,14 +240,14 @@
     "href": "quarto_presentation.html#yaml-options-explained-13",
     "title": "Quarto 101",
     "section": "YAML Options Explained (1/3)",
-    "text": "YAML Options Explained (1/3)\n\nproject:type: Defines project type\n\nOptions: website (creates multi-page site), book (creates book-like structure), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)"
+    "text": "YAML Options Explained (1/3)\n\nproject:type: Defines project type\n\nOptions: website (creates multi-page site), default (single document)…\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)"
   },
   {
     "objectID": "quarto_presentation.html#yaml-options-explained-23",
     "href": "quarto_presentation.html#yaml-options-explained-23",
     "title": "Quarto 101",
     "section": "YAML Options Explained (2/3)",
-    "text": "YAML Options Explained (2/3)\n\nnavbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), icon (uses icon instead of text), href (specifies link destination)\n\nsidebar:style:"
+    "text": "YAML Options Explained (2/3)\n\nnavbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), href (specifies link destination)\n\nsidebar:style:"
   },
   {
     "objectID": "quarto_presentation.html#yaml-options-explained-33",
@@ -331,14 +331,14 @@
     "href": "quarto_presentation.html#yaml-options-explained-33-1",
     "title": "Quarto 101",
     "section": "YAML Options Explained (3/3)",
-    "text": "YAML Options Explained (3/3)\n\nprogress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: last-modified (updates automatically), specific date (e.g., “2023-09-15”), today (current date)"
+    "text": "YAML Options Explained (3/3)\n\nprogress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: specific date (e.g., “2023-09-15”), today (current date)"
   },
   {
     "objectID": "quarto_page.html",
     "href": "quarto_page.html",
     "title": "Quarto 101",
     "section": "",
-    "text": "project:\n  type: website\nwebsite:\n  title: \"My Quarto Website\"\n  navbar:\n    background: primary\n    left:\n      - text: \"Home\"\n        href: index.qmd\n    right:\n      - icon: github\n        href: https://github.com/yourusername\n  sidebar:\n  style: \"docked\"\n  search: true\n  contents:\n    - section: \"Example Section\"\n      contents:\n        - about.qmd\n  \nformat:\n  html:\n    theme: \n      light: flatly\n      dark: darkly\n\n\n\n\n\nproject:type: Defines project type\n\nOptions: website (creates multi-page site), book (creates book-like structure), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)\n\n\n\n\n\n\n\nnavbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), icon (uses icon instead of text), href (specifies link destination)\n\nsidebar:style:\n\n\n\n\n\n\nformat:html:theme: Sets color scheme for the website\n\nlight: Theme for light mode\n\nOptions: default, cerulean, cosmo, flatly, journal, litera, lumen, minty, pulse, sandstone, spacelab, united, yeti (all provide different color schemes and styles)\n\ndark: Theme for dark mode\n\nOptions: darkly, cyborg, slate, solar (dark variants of light themes)\n\n\n\n\n\n\n\n---\ntitle: \"Quarto 101\"\nauthor: \"Your Name\"\nformat: \n  html:\n    theme: \"flatly\"\n    highlight-style: \"tango\"\n    number-sections: true\n---\n\n\n\n\n\ntitle: Sets the presentation title\n\nOptions: Any string (e.g., “Advanced Quarto Techniques”)\n\nauthor: Specifies the author’s name\n\nOptions: Single name (e.g., “Your Name”) or list of names\n\nformat: Defines the output format\n\nOptions: revealjs (for presentations), html, pdf, docx, etc.\n\n\n\n\n\n\n\nhtml: Configures html options\n\ntheme: Sets the presentation theme\n\nOptions: cerulean, lumen, minty…\n\nhighlight-style: Sets the style used for syntax highlighting in code blocks\n\nOptions: tango, espresso, breezedark…\n\ntoc: Enables or disables the display of a table of contents\ntoc-depth:Specifies how many levels of headings are included in the table of contents\nnumber-sections: Determines whether to automatically number the sections of the document\n\n\n\n\n\n\n\nprogress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: last-modified (updates automatically), specific date (e.g., “2023-09-15”), today (current date)"
+    "text": "project:\n  type: website\nwebsite:\n  title: \"My Quarto Website\"\n  navbar:\n    background: primary\n    left:\n      - text: \"Home\"\n        href: index.qmd\n    right:\n      - icon: github\n        href: https://github.com/yourusername\n  sidebar:\n  style: \"docked\"\n  search: true\n  contents:\n    - section: \"Example Section\"\n      contents:\n        - about.qmd\n  \nformat:\n  html:\n    theme: \n      light: flatly\n      dark: darkly\n\n\n\n\n\nproject:type: Defines project type\n\nOptions: website (creates multi-page site), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)\n\n\n\n\n\n\n\nnavbar:background: Sets navbar’s background color\n\nOptions: primary (blue), secondary (gray), success (green), danger (red), warning (yellow), info (light blue), light (white), dark (black)\n\nnavbar:left: Configures left-aligned navbar items (can also be right)\n\nOptions: text (displays text, e.g., “Home”), icon (uses icon instead of text), href (specifies link destination)\n\nsidebar:style:\n\n\n\n\n\n\nformat:html:theme: Sets color scheme for the website\n\nlight: Theme for light mode\n\nOptions: default, cerulean, cosmo, flatly, journal, litera, lumen, minty, pulse, sandstone, spacelab, united, yeti (all provide different color schemes and styles)\n\ndark: Theme for dark mode\n\nOptions: darkly, cyborg, slate, solar (dark variants of light themes)\n\n\n\n\n\n\n\n---\ntitle: \"Quarto 101\"\nauthor: \"Your Name\"\nformat: \n  html:\n    theme: \"flatly\"\n    highlight-style: \"tango\"\n    number-sections: true\n---\n\n\n\n\n\ntitle: Sets the presentation title\n\nOptions: Any string (e.g., “Advanced Quarto Techniques”)\n\nauthor: Specifies the author’s name\n\nOptions: Single name (e.g., “Your Name”) or list of names\n\nformat: Defines the output format\n\nOptions: revealjs (for presentations), html, pdf, docx, etc.\n\n\n\n\n\n\n\nhtml: Configures html options\n\ntheme: Sets the presentation theme\n\nOptions: cerulean, lumen, minty…\n\nhighlight-style: Sets the style used for syntax highlighting in code blocks\n\nOptions: tango, espresso, breezedark…\n\ntoc: Enables or disables the display of a table of contents\ntoc-depth:Specifies how many levels of headings are included in the table of contents\nnumber-sections: Determines whether to automatically number the sections of the document\n\n\n\n\n\n\n\nprogress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: specific date (e.g., “2023-09-15”), today (current date)"
   },
   {
     "objectID": "quarto_page.html#project-level-yaml",
@@ -352,7 +352,7 @@
     "href": "quarto_page.html#yaml-options-explained-13",
     "title": "Quarto 101",
     "section": "",
-    "text": "project:type: Defines project type\n\nOptions: website (creates multi-page site), book (creates book-like structure), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)"
+    "text": "project:type: Defines project type\n\nOptions: website (creates multi-page site), default (single document)\n\nwebsite:title: Sets website title in browser tab and navbar.\n\nOptions: docked (remains fixed as content scrolls), floating (moves with page content)"
   },
   {
     "objectID": "quarto_page.html#yaml-options-explained-23",
@@ -394,7 +394,7 @@
     "href": "quarto_page.html#yaml-options-explained-33-1",
     "title": "Quarto 101",
     "section": "",
-    "text": "progress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: last-modified (updates automatically), specific date (e.g., “2023-09-15”), today (current date)"
+    "text": "progress: Shows a progress bar\n\nOptions: true (show), false (hide)\n\ndate: Sets the document date\n\nOptions: specific date (e.g., “2023-09-15”), today (current date)"
   },
   {
     "objectID": "quarto_page.html#markdown-basics",
